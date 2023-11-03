@@ -4,7 +4,7 @@ package domain;
 import java.util.Random;
 import java.util.Scanner;
 
-
+//clase1
 public class integrador {
     //Metodo MenuPrincipal
     public static void menuPrincipal(){
