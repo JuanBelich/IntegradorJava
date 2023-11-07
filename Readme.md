@@ -30,4 +30,3 @@ p><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab450
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;'><span style="font-family: Impact, Charcoal, sans-serif; text-shadow: rgba(136, 136, 136, 0.8) 3px 3px 2px; font-size: 18px;">Agradecimientos especiales&nbsp;</span></p>
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;'>A los  tutores, en especial a Tamara y Matias quienes fueron de gran ayuda en momentos de dudas<a href="https://www.java.com" target="_blank" rel="noreferrer"></a></p>
 <p><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="1000" height="10"><br></p>
-<div style="color: red;">Prueba Word to HTML - <a href="https://wordtohtml.net/site/payment">P&aacute;sate a PRO</a>.</div>
