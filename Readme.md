@@ -1,4 +1,4 @@
-p><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="1000" height="10"></p>
+<p><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="1000" height="10"></p>
 <p><img src="/imagenes/imagen1.png" width="1000" height="10"><img src="/imagenes/imagen1.png" width="998" height="477"><br></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;'><span style="font-family: Impact, Charcoal, sans-serif; font-size: 18px; text-shadow: rgba(136, 136, 136, 0.8) 3px 3px 2px;">Introducci&oacute;n</span></p>
