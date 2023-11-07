@@ -32,6 +32,7 @@ public class integrador {
     public static void suerte(int moneda, int tipeado){
         Scanner entrada=new Scanner(System.in);
         int num,cara;
+        // ingreso de datos 1 o 2 para elegir cara o seca
         System.out.println("");
         System.out.println("Elegi: 1 = Cara o 2 = Cruz");
         tipeado=Integer.parseInt(entrada.nextLine());
@@ -43,9 +44,13 @@ public class integrador {
             System.out.println("Elegi: 1 = Cara o 2 = Seca");
             tipeado=Integer.parseInt(entrada.nextLine());
         }
+        // se crea un objeto de la clase random 
         Random aleatorio = new Random(System.currentTimeMillis());
-        cara= aleatorio.nextInt(2)+1; //utilizo el objeto de la clase Random para generar un valor aleatorio entre 1 y 2
+         //utilizo el objeto de la clase Random para generar un valor aleatorio entre 1 y 2
+        cara= aleatorio.nextInt(2)+1;
+        //se muestra el resultado
         System.out.println(cara);
+        //se le asigna el valor random a la variable moneda
         if(cara==1){
             moneda=1;
         }else{
@@ -54,7 +59,7 @@ public class integrador {
             }
             moneda=2;
         }
-        
+        //se compara la variable moneda con 1 o 2 para saber el resultado
         if(moneda == 1){
             System.out.println("");
             System.out.println("El resultado del azar es: Cara");
@@ -64,8 +69,9 @@ public class integrador {
                 System.out.println("El resultado del azar es: Seca");
             }
         }
+        //se compara para saber si el usuario gano o perdio
         if(moneda == tipeado){
-            System.out.println("Ganaste!!");
+            System.out.println("GANASTE!!");
         }else{
             System.out.println("PERDISTE :c ");
         }        
@@ -80,12 +86,17 @@ public class integrador {
                     matriz[i][j]=1;
                 }
             }
-            //se cargan en la matriz el numero 0 en posiciones aleatorias
+            //se cargan en la matriz el numero 0 en posiciones aleatorias que serian los tesoros
             matriz[aleatorio.nextInt(3)][aleatorio.nextInt(3)]=0;
             matriz[aleatorio.nextInt(3)][aleatorio.nextInt(3)]=0;
             matriz[aleatorio.nextInt(3)][aleatorio.nextInt(3)]=0;
         }
     public static void comparar(int [][]matriz, int pos,int intentos){
+        /* metodo para saber si en la posicion ingresada por el usuario
+          se encuentra un 0 que equivaldria al tesoro, si se encuentra un 0
+          se da por ganado el juego y sino se resta un intento y se pide 
+          que se ingrese un valor nuevo cando los intentos klleguen a 3
+          el juego se termina*/
         Scanner entrada= new Scanner(System.in);
         do{
             if(matriz[0][0]==0 && pos==1){
@@ -149,11 +160,15 @@ public class integrador {
         }while(intentos!=3);
     }
     public static void tesoro(int [][]matriz,int intentos){
+            /*
+                metodo principal del juego tesoro, menus e indicaciones
+            */
             Scanner entrada= new Scanner(System.in);
             int pos,posTablero=1;
             
             System.out.println(" B I E N V E N I D O  A  L A   B U S Q U E D A   D E L   T E S O R O\n");
             System.out.println("   Tenes 4 intentos!\n");
+            //se muestra la matriz con sus respectivas posiciones al usuario
             for(int i=0;i<=2;i++){
                 for(int j=0;j<=2;j++){
                     System.out.print(" ["+posTablero+"] ");
@@ -161,16 +176,10 @@ public class integrador {
                 }
                 System.out.println("");
             }     
+            //llamamos al metodo llenar matriz para agregar 1 y 0 en posiciones aleatorias
             llenarMatriz(matriz);
             
-           for(int i=0;i==2;i++){
-               for(int j=0;j==2;j++){
-                   System.out.print("["+posTablero+"]");
-                   posTablero+=1;
-               }
-               System.out.println("");
-           }
-            
+            //se pide al usuario que ingrese una posicion de la matriz para saber si esta el tesoro
             System.out.println("Ingresa un numero entre 1 y 9 para intentar encontrar el tesoro perdido");
             pos=Integer.parseInt(entrada.nextLine());
             //bucle de control de ingreso
@@ -347,7 +356,7 @@ public class integrador {
         //En esta parte se mostrará las palabras y su longitud a traves de un metodo
         String palabraSecreta = obtenerPalabraSecreta();
 //        //Muestra la palabra
-        System.out.println(palabraSecreta);
+        //System.out.println(palabraSecreta);
         //Este es el metodo con el que se mostrarán las palabras escondidas usando un guion bajo
         char[] palabraGuiones = getGuionesFromPalabra(palabraSecreta);
        
